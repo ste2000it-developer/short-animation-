@@ -17,7 +17,7 @@ document.getElementById('b1').classList.toggle('active',n===1);
 document.getElementById('b2').classList.toggle('active',n===2);
 const screen=document.getElementById('screen'),note=document.getElementById('note');
 if(n===1){screen.innerHTML='<iframe src="./TP01.html" title="TP01 ทรพา แอนิเมชันต้นฉบับ" loading="eager" allow="autoplay"></iframe>';note.innerHTML='กำลังแสดงไฟล์ TP01.html ต้นฉบับโดยตรง · <a href="./TP01.html" target="_blank" rel="noopener">เปิด TP01 เต็มหน้า</a>';}
-else{screen.innerHTML='<div class="placeholder"><div><strong>TP02 · นนทกาล</strong><p>รอเชื่อมไฟล์ฉาก TP02 ต้นฉบับ</p></div></div>';note.textContent='TP02 ยังไม่ได้เชื่อมกับหน้าเว็บ';}
+else{screen.innerHTML='<iframe src="./TP02.html" title="TP02 นนทกาล พื้นที่ประกอบหุ่น" loading="eager"></iframe>';note.innerHTML='พื้นที่จัดโครงหุ่น TP02 · <a href="./TP02.html" target="_blank" rel="noopener">เปิด TP02 เต็มหน้า</a>';}
 history.replaceState(null,'','#TP0'+n);
 }
 show(location.hash==='#TP02'?2:1);
