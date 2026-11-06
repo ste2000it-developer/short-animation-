@@ -90,3 +90,5 @@ button,.upload{user-select:none;-webkit-user-select:none}
 #centerGuides .guide-v{left:50%;top:0;bottom:0;border-left:1px dashed #60e0e8;transform:translateX(-.5px)}
 #centerGuides .guide-h{top:50%;left:0;right:0;border-top:1px dashed #60e0e8;transform:translateY(-.5px)}
 #centerGuides .guide-dot{position:absolute;left:50%;top:50%;width:7px;height:7px;border-radius:50%;background:#60e0e8;transform:translate(-50%,-50%)}
+
+#centerGuides .guide-v[hidden],#centerGuides .guide-h[hidden]{display:none}
