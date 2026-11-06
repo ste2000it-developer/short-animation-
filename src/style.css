@@ -99,3 +99,11 @@ button,.upload{user-select:none;-webkit-user-select:none}
 .dialog input{font-size:16px;min-height:44px}
 .dialog .actions button{min-height:44px}
 @media(max-height:540px){.dialog{padding:12px 16px}.dialog h3{margin:4px 0 8px}.dialog .actions{margin-top:10px}}
+
+/* iPad floating keyboards do not resize visualViewport: anchor dialogs near the top. */
+@media (pointer:coarse) and (min-width:600px){
+ .modal{align-items:start;justify-items:center;padding-top:calc(env(safe-area-inset-top) + 16px)}
+ .dialog{margin-top:0;max-height:min(310px,calc(var(--visible-height,100dvh) - 36px));padding:16px 20px}
+ .dialog h3{margin:0 0 10px}
+ .dialog .actions{margin-top:12px}
+}
